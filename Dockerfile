@@ -13,6 +13,6 @@ RUN apt-get update && \
 RUN echo "Y" | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Install local console
-RUN npm install -g screeps-multimeter
+RUN npm install -g screeps-multimeter @types/screeps @types/lodash
 # RUN git clone https://github.com/uuboyscy/screeps_console.git
 # ENV PYTHONPATH=/workspaces/screeps-editor/screeps_console/screeps_console
